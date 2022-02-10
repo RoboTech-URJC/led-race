@@ -18,3 +18,4 @@ We changed the code to customize with our own leds
 ---
 - Adrían Madinabeitia ~ [madport](https://github.com/madport)
 - Iván Porras ~ [Ivan-Porras](https://github.com/Ivan-Porras)
+- Óscar Martínez ~ [OscarMrZ](https://github.com/OscarMrZ)
