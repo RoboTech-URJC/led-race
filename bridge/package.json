@@ -1,0 +1,15 @@
+{
+  "name": "openledrace-bridge",
+  "version": "1.0.0",
+  "description": "Serial → MQTT bridge for Open LED Race",
+  "main": "bridge.js",
+  "scripts": {
+    "start": "node bridge.js",
+    "start:win": "set SERIAL_PORT=COM3 && node bridge.js",
+    "start:linux": "SERIAL_PORT=/dev/ttyACM0 node bridge.js"
+  },
+  "dependencies": {
+    "mqtt": "^5.0.0",
+    "serialport": "^12.0.0"
+  }
+}

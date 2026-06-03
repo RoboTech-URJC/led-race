@@ -195,6 +195,14 @@ mosquitto_pub -h localhost -t openledrace/tournament/command -m '{"action":"rese
 mosquitto_pub -h localhost -t openledrace/tournament/command -m '{"action":"reload_players"}'
 ```
 
+## Interfaz Node-RED
+
+El proyecto incluye una pantalla grande para carrera/bracket y un control movil de torneo hechos con Node-RED Dashboard.
+
+La documentacion de la interfaz, los topics usados, el control desde el movil y el funcionamiento del derrape estan en:
+
+- [`node-red.md`](node-red.md)
+
 ## Flujo recomendado
 
 1. Arranca el broker MQTT.
@@ -202,7 +210,8 @@ mosquitto_pub -h localhost -t openledrace/tournament/command -m '{"action":"relo
 3. Ejecuta `bridge/bridge.js` con el puerto serie correcto.
 4. Edita `players.txt`.
 5. Ejecuta `tournament-engine.js`.
-6. Escucha `openledrace/#` para integrar pantalla, dashboard o automatizaciones.
+6. Importa los flows en Node-RED y abre el dashboard.
+7. Escucha `openledrace/#` para integrar pantalla, dashboard o automatizaciones.
 
 ## Problemas comunes
 
